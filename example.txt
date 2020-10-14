@@ -1,0 +1,78 @@
+⭐️ Course Contents ⭐️
+Introduction
+---------------------
+⌨️ (00:00:00) Introduction
+⌨️ (00:02:02) Course overview
+⌨️ (00:04:38) Course Project
+⌨️ (00:05:51) What is Deno
+⌨️ (00:08:19) Course project (Survey app) demo
+⌨️ (00:11:54) Install and Getting started
+⌨️ (00:14:34) Write "Hello World"
+⌨️ (00:15:50) Main Features
+
+TypeScript
+---------------------
+⌨️ (00:17:22) What is TypeScript
+⌨️ (00:24:04) TypeScript Types
+⌨️ (00:37:40) Interfaces
+⌨️ (00:43:46) Classes
+⌨️ (00:48:03) Generics
+⌨️ (00:56:31) Enums
+
+Main features
+---------------------
+⌨️ (01:01:23) Import from URL
+⌨️ (01:02:23) ES6 Modules import syntax
+⌨️ (01:03:01) Top Level await
+⌨️ (01:04:18) Browser API
+⌨️ (01:06:20) Security
+⌨️ (01:16:31) Single Executable file
+
+⌨️ (01:18:55) Terminal commands
+⌨️ (01:23:52) Standard Library and 3rd party modules
+⌨️ (01:26:31) Create basic HTTP server
+⌨️ (01:32:20) Working with file system
+⌨️ (01:41:55) Using npm packages
+⌨️ (01:45:40) Answers on common questions
+
+Project - Survey app
+----------------------
+⌨️ (01:57:02) Install oak framework and setup basic server
+⌨️ (02:03:41) Install denon for automatic server restart on file change
+⌨️ (02:06:03) Easily manage versions and dependencies
+⌨️ (02:08:06) Organize routes
+⌨️ (02:09:36) Create AuthController and configure Login & Register routes
+⌨️ (02:13:54) Setup connection with MongoDB
+⌨️ (02:19:40) Create User model and implement registration
+⌨️ (02:40:42) Implement login
+⌨️ (02:54:16) Install dontenv and create .env file
+
+Survey CRUD
+----------------------
+⌨️ (02:59:35) Configure routes for Survey CRUD and Create SurveyController
+⌨️ (03:04:52) Create Survey model and implement Survey creation
+⌨️ (03:11:22) Implement get surveys
+⌨️ (03:20:33) Create BaseModel and inherit Survey and User models from there
+⌨️ (03:26:12) Implement to get single survey
+⌨️ (03:31:29) Implement survey update
+⌨️ (03:39:22) Printing application errors
+⌨️ (03:40:26) Fixing problem of "this" binding
+⌨️ (03:44:27) Implement survey deletion
+⌨️ (03:48:52) Create authMiddleware and add authentication to Survey CRUD
+
+⌨️ (04:07:38) Implement CRUD of questions
+
+Create Website
+----------------------
+⌨️ (04:44:15) Create SiteController and configure routes
+⌨️ (04:47:38) Install template engine and create views
+⌨️ (04:51:48) Render all surveys
+⌨️ (04:55:32) Configure oak to handle static files (CSS, Javascript, Images)
+⌨️ (05:06:05) Write basic styles
+⌨️ (05:07:31) Create and use partial view files
+⌨️ (05:09:30) Implement to view single survey
+⌨️ (05:33:58) Get form submitted data and validation
+⌨️ (05:49:07) Implement displaying validation errors in form
+⌨️ (06:01:45) Implement to save survey answers
+⌨️ (06:14:49) Create a real survey using our survey app
+
