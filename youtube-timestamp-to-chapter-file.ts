@@ -2,7 +2,7 @@
 
 /**
  * Name         : YouTube timestamp to chapter file
- * Usage        : ./mod.ts textfile
+ * Usage        : ./mod.ts textfile ?
  * Description  : Process text file with chapter info copy pasted from YouTube containing lines in the following format:
  *                `00:00:00) Name of chapter\n`
  *                and convert to a MKV/MP4 chapter file for use with https://mkvtoolnix.download/
@@ -12,14 +12,14 @@
 export class ChapterFile {
   public readonly content: string;
   public readonly fileName: string;
-  private readonly linesToMatch =
-    /(?<time>\d{2}:\d{2}:\d{2})\)\u0020(?<chapterTitle>.*)/g;
+  // https://regex101.com/
+  private readonly linesToMatch = /(?<time>\d{2}:\d{2}:\d{2})\)?\u0020(?<chapterTitle>.*)/g;
 
   constructor(inputFileName: string, inputFile: string) {
     if (!this.linesToMatch.test(inputFile)) {
       throw new Error("No chapter information found");
     }
-    this.fileName = `${inputFileName}_chapters`;
+    this.fileName = `${inputFileName}_chapters.txt`;
 
     const matchedLines = inputFile.matchAll(this.linesToMatch);
     this.content = Array.from(matchedLines, (line, index) => {
