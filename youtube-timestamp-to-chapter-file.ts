@@ -13,7 +13,8 @@ export class ChapterFile {
   public readonly content: string;
   public readonly fileName: string;
   // https://regex101.com/
-  private readonly linesToMatch = /(?<time>\d{2}:\d{2}:\d{2})\)?\u0020(?<chapterTitle>.*)/g;
+  // private readonly linesToMatch = /(?<time>\d{2}:\d{2}:\d{2})\)?\u0020(?<chapterTitle>.*)/g;
+  private readonly linesToMatch = /(?<time>\d{2}:\d{2}:\d{2}|\d{2}:\d{2})\)?\s(\-)?(\s)?(?<chapterTitle>.*)/g;
 
   constructor(inputFileName: string, inputFile: string) {
     if (!this.linesToMatch.test(inputFile)) {
@@ -31,7 +32,7 @@ export class ChapterFile {
 
 if (import.meta.main) {
   if (Deno.args.length !== 1) {
-    throw "Please supply one file name argument";
+    throw "Please supply one file name argument containing the text file to extract chapters from";
   }
   const inputFilename = Deno.args[0];
   const inputFile = Deno.readTextFileSync(inputFilename);
