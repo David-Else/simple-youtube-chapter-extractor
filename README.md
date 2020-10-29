@@ -1,10 +1,11 @@
-# YouTube Chapter Extractor
+# Simple YouTube Chapter Extractor
 
-Extract YouTube chapters from copy/pasted text files for conversion to the [simple mkvmerge chapter format](https://mkvtoolnix.download/doc/mkvmerge.html#mkvmerge.chapters) using the `mkvmerge` command line tool or `MKVToolNix GUI`.
+Copy the text containing chapter information directly from YouTube and convert it into [simple mkvmerge chapter format](https://mkvtoolnix.download/doc/mkvmerge.html#mkvmerge.chapters) to embed in your downloaded YouTube video.
 
 # Requirements
 
 - [Deno](https://deno.land/) installed
+- `mkvmerge` command line tool or `MKVToolNix GUI` installed
 - A text file with chapters that are in any of the following formats:
 
 The time stamp in either `00:00` or `00:00:00` format followed by either:
@@ -70,7 +71,9 @@ or:
 
 ## Merge chapters into video file
 
-Download `mkvmerge` from [the home site](https://mkvtoolnix.download/downloads.html) and use:
+- Use `MKVToolNix GUI` which contains all the functionality of `mkvmerge`
+
+- Download `mkvmerge` from [the home site](https://mkvtoolnix.download/downloads.html) and use:
 
 ```
 mkvmerge \
@@ -79,19 +82,29 @@ mkvmerge \
   input-file.mkv
 ```
 
-or [Flathub](https://flathub.org/apps/details/org.bunkus.mkvtoolnix-gui) and use:
+- or [Flathub](https://flathub.org/apps/details/org.bunkus.mkvtoolnix-gui) and use:
 
 ```
 flatpak run --command=mkvmerge org.bunkus.mkvtoolnix-gui --chapters originalfilename_chapters.txt -o output-file.mkv input-file.mkv
 ```
 
-Or use `MKVToolNix GUI` which contains all the functionality of `mkvmerge`.
-
 # Development
 
-`deno test` to run tests
+Run `deno test` to run tests.
 
-Suggested contributions:
+## Suggested contributions
 
 - Add more text chapter formats
+- Add more tests
 - Automate `mkvmerge` usage
+- Automate `youtube-dl` chapter extraction from JSON file. The feature is currently broken, and the entire `youtube-dl` github is down due to stupid [DMCA takedown notice by RIAA](https://github.com/github/dmca/blob/master/2020/10/2020-10-23-RIAA.md)
+
+## Suggested things not to bother with
+
+- Automating everything using the YouTube API. It have been done by https://github.com/gabrielfroes/youtube-chapter-extractor, and it seems to keep breaking and be too complex.
+
+# The future of video sharing
+
+The future of video sharing is federated peer to peer, we must be free to express ourselves without corporate or government censorship. Have a look at https://joinpeertube.org/ and watch this:
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://framatube.org/videos/embed/9c9de5e8-0a1e-484a-b099-e80766180a6d?subtitle=en)
