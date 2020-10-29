@@ -39,7 +39,7 @@ Please contribute more formats to help others use this program!
 
 ![example](video-chapters.gif)
 
-- You can download YouTube videos using [youtube-dl](https://youtube-dl.org/) or one of many browser extensions.
+- You can download YouTube videos using [youtube-dl](https://youtube-dl.org/) or one of many browser extensions
 - Under the video in the description there should be text including chapters. Copy and paste all the text into a file for use with this program. It might look like:
 
 ```
@@ -59,7 +59,7 @@ Introduction
 ## Extract chapters from text file
 
 ```
-deno run youtube-chapter-extractor.ts --allow-read --allow-write [name of text file to process]
+deno run --allow-read --allow-write youtube-chapter-extractor.ts [name of text file to process]
 ```
 
 or:
@@ -85,4 +85,13 @@ or [Flathub](https://flathub.org/apps/details/org.bunkus.mkvtoolnix-gui) and use
 flatpak run --command=mkvmerge org.bunkus.mkvtoolnix-gui --chapters originalfilename_chapters.txt -o output-file.mkv input-file.mkv
 ```
 
-Or use `MKVToolNix GUI` which contains all the functionallity of `mkvmerge`.
+Or use `MKVToolNix GUI` which contains all the functionality of `mkvmerge`.
+
+# Development
+
+`deno test` to run tests
+
+Suggested contributions:
+
+- Add more text chapter formats
+- Automate `mkvmerge` usage
