@@ -105,6 +105,4 @@ Run `deno test` to run tests.
 
 # The future of video sharing
 
-The future of video sharing is federated peer to peer, we must be free to express ourselves without corporate or government censorship. Have a look at https://joinpeertube.org/ and watch this:
-
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://framatube.org/videos/embed/9c9de5e8-0a1e-484a-b099-e80766180a6d?subtitle=en)
+The future of video sharing is federated peer to peer, we must be free to express ourselves without corporate or government censorship. Have a look at https://joinpeertube.org/.
