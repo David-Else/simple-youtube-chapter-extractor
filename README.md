@@ -73,6 +73,8 @@ or:
 
 - Use `MKVToolNix GUI` which contains all the functionality of `mkvmerge`
 
+![chapter-file](chapter-file.png)
+
 or
 
 - Download `mkvmerge` from [the home site](https://mkvtoolnix.download/downloads.html) and use:
