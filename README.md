@@ -73,6 +73,8 @@ or:
 
 - Use `MKVToolNix GUI` which contains all the functionality of `mkvmerge`
 
+or
+
 - Download `mkvmerge` from [the home site](https://mkvtoolnix.download/downloads.html) and use:
 
 ```
@@ -82,7 +84,9 @@ mkvmerge \
   input-file.mkv
 ```
 
-- or [Flathub](https://flathub.org/apps/details/org.bunkus.mkvtoolnix-gui) and use:
+or
+
+- [Flathub](https://flathub.org/apps/details/org.bunkus.mkvtoolnix-gui) and use:
 
 ```
 flatpak run --command=mkvmerge org.bunkus.mkvtoolnix-gui --chapters originalfilename_chapters.txt -o output-file.mkv input-file.mkv
@@ -101,7 +105,7 @@ Run `deno test` to run tests.
 
 ## Suggested things not to bother with
 
-- Automating everything using the YouTube API. It have been done by https://github.com/gabrielfroes/youtube-chapter-extractor, and it seems to keep breaking and be too complex.
+- Automating everything using the YouTube API. It has been done by https://github.com/gabrielfroes/youtube-chapter-extractor, and it seems to keep breaking and be too complex.
 
 # The future of video sharing
 

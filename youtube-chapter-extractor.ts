@@ -10,6 +10,8 @@ export class ChapterFile {
     if (!this.linesToMatch.test(inputFile)) {
       throw new Error("No chapter information found");
     }
+    this.linesToMatch.lastIndex = 0; // reset the index after test moved it on
+
     this.fileName = `${inputFileName}_chapters.txt`;
 
     const matchedLines = inputFile.matchAll(this.linesToMatch);
