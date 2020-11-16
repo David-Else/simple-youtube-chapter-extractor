@@ -6,7 +6,33 @@ Copy the text containing chapter information directly from YouTube and convert i
 
 - [Deno](https://deno.land/) installed
 - `mkvmerge` command line tool or `MKVToolNix GUI` installed
-- A text file with chapters that are in any of the following formats:
+
+# Usage
+
+- Find a video that uses the recent YouTube chapters feature:
+
+![example](images/video-chapters.gif)
+
+- You can download YouTube videos using [youtube-dl](https://youtube-dl.org/) or one of many browser extensions
+- Under the video in the description there should be text including chapters. Copy and paste all the text into a file for use with this program. It might look like:
+
+```
+⭐️ Course Contents ⭐️
+Introduction
+---------------------
+⌨️ (00:00:00) Introduction
+⌨️ (00:02:02) Course overview
+⌨️ (00:04:38) Course Project
+⌨️ (00:05:51) What is Deno
+⌨️ (00:08:19) Course project (Survey app) demo
+⌨️ (00:11:54) Install and Getting started
+⌨️ (00:14:34) Write "Hello World"
+⌨️ (00:15:50) Main Features
+```
+
+# Text file source formats allowed
+
+YouTubers can create the list of chapters in any way they like, the following are some common ones:
 
 The time stamp in either `00:00` or `00:00:00` format followed by either:
 
@@ -33,29 +59,6 @@ The current regex used is:
 `/(?<time>\d{2}:\d{2}:\d{2}|\d{2}:\d{2})\)?\s(\-)?(\s)?(?<chapterTitle>.*)/g;`.
 
 Please contribute more formats to help others use this program!
-
-# Usage
-
-- Find a video that uses the recent YouTube chapters feature, they look like:
-
-![example](images/video-chapters.gif)
-
-- You can download YouTube videos using [youtube-dl](https://youtube-dl.org/) or one of many browser extensions
-- Under the video in the description there should be text including chapters. Copy and paste all the text into a file for use with this program. It might look like:
-
-```
-⭐️ Course Contents ⭐️
-Introduction
----------------------
-⌨️ (00:00:00) Introduction
-⌨️ (00:02:02) Course overview
-⌨️ (00:04:38) Course Project
-⌨️ (00:05:51) What is Deno
-⌨️ (00:08:19) Course project (Survey app) demo
-⌨️ (00:11:54) Install and Getting started
-⌨️ (00:14:34) Write "Hello World"
-⌨️ (00:15:50) Main Features
-```
 
 ## Extract chapters from text file
 
