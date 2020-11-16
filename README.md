@@ -38,7 +38,7 @@ Please contribute more formats to help others use this program!
 
 - Find a video that uses the recent YouTube chapters feature, they look like:
 
-![example](video-chapters.gif)
+![example](images/video-chapters.gif)
 
 - You can download YouTube videos using [youtube-dl](https://youtube-dl.org/) or one of many browser extensions
 - Under the video in the description there should be text including chapters. Copy and paste all the text into a file for use with this program. It might look like:
@@ -73,7 +73,7 @@ or:
 
 - Use `MKVToolNix GUI` which contains all the functionality of `mkvmerge`
 
-![chapter-file](chapter-file.png)
+![chapter-file](images/chapter-file.png)
 
 or
 
