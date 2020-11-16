@@ -32,7 +32,7 @@ Introduction
 
 # Text file source formats allowed
 
-YouTubers can create the list of chapters in any way they like, the following are some common ones:
+YouTubers can create the list of chapters in any way they like, the following are some common ones supported:
 
 The time stamp in either `00:00` or `00:00:00` format followed by either:
 
@@ -58,7 +58,7 @@ The current regex used is:
 
 `/(?<time>\d{2}:\d{2}:\d{2}|\d{2}:\d{2})\)?\s(\-)?(\s)?(?<chapterTitle>.*)/g;`.
 
-Please contribute more formats to help others use this program!
+To see what it does paste it into [regex101.com](https://regex101.com/). Please contribute more formats to help others use this program!
 
 ## Extract chapters from text file
 
