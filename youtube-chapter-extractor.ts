@@ -16,8 +16,16 @@ export class ChapterFile {
 
     const matchedLines = inputFile.matchAll(this.linesToMatch);
     this.content = Array.from(matchedLines, (line, index) => {
-      const { time, chapterTitle } = line.groups!;
-      return `CHAPTER${index}=${time}.000\nCHAPTER${index}NAME=${chapterTitle}`;
+      let { time, chapterTitle } = line.groups!;
+      let indexString: string;
+      if (time.length === 5) {
+        time = `00:${time}`;
+      }
+      if (index < 10) {
+        indexString = `0${index}`;
+      } else indexString = `${index}`;
+
+      return `CHAPTER${indexString}=${time}.000\nCHAPTER${indexString}NAME=${chapterTitle}`;
     }).join("\n");
   }
 }
