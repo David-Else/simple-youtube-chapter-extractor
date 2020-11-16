@@ -22,8 +22,10 @@ Introduction
     assertEquals(chapterFile.fileName, `${testFileName}_chapters.txt`);
     assertEquals(
       chapterFile.content,
-      `CHAPTER0=00:02:02.000
-CHAPTER0NAME=Course overview`
+      `CHAPTER0=00:00:00.000
+CHAPTER0NAME=Introduction
+CHAPTER1=00:02:02.000
+CHAPTER1NAME=Course overview`
     );
   },
 });
