@@ -1,9 +1,5 @@
 {
   "deno.enable": true,
   "deno.unstable": true,
-  "deno.lint": true,
-  "spellright.language": [
-    "en_US"
-  ],
-  "spellright.documentTypes": []
+  "deno.lint": true
 }
