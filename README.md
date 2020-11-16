@@ -106,7 +106,7 @@ Run `deno test` to run tests.
 - Add more text chapter formats
 - Add more tests
 - Automate `mkvmerge` usage
-- Automate `youtube-dl` chapter extraction from JSON file. The feature is currently broken, `youtube-dl --write-info-json` results in `"chapters": null`
+- Automate `youtube-dl` chapter extraction from JSON file. The feature is currently broken in `2020.11.17`, `youtube-dl --write-info-json` results in `"chapters": null`
 
 ## Suggested things not to bother with
 
