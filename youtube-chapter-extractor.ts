@@ -3,29 +3,28 @@
 export class ChapterFile {
   public readonly content: string;
   public readonly fileName: string;
-  // https://regex101.com/
   private readonly linesToMatch = /(?<time>\d{2}:\d{2}:\d{2}|\d{2}:\d{2})\)?\s(\-)?(\s)?(?<chapterTitle>.*)/g;
 
   constructor(inputFileName: string, inputFile: string) {
     if (!this.linesToMatch.test(inputFile)) {
       throw new Error("No chapter information found");
     }
-    this.linesToMatch.lastIndex = 0; // reset the index after test moved it on
+    this.linesToMatch.lastIndex = 0; // reset the index after .test moved it on
 
     this.fileName = `${inputFileName}_chapters.txt`;
 
     const matchedLines = inputFile.matchAll(this.linesToMatch);
     this.content = Array.from(matchedLines, (line, index) => {
-      let { time, chapterTitle } = line.groups!;
-      let indexString: string;
-      if (time.length === 5) {
-        time = `00:${time}`;
-      }
-      if (index < 10) {
-        indexString = `0${index}`;
-      } else indexString = `${index}`;
+      const { time, chapterTitle } = line.groups!;
+      let chapterNumber: string;
 
-      return `CHAPTER${indexString}=${time}.000\nCHAPTER${indexString}NAME=${chapterTitle}`;
+      if (index < 10) {
+        chapterNumber = `0${index}`;
+      } else chapterNumber = `${index}`;
+
+      return `CHAPTER${chapterNumber}=${
+        time.length === 5 ? `00:${time}` : time
+      }.000\nCHAPTER${chapterNumber}NAME=${chapterTitle}`;
     }).join("\n");
   }
 }
