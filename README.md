@@ -12,7 +12,7 @@ Copy the text containing chapter information directly from YouTube and convert i
 ## Install or update:
 
 ```
-deno install -Af https://deno.land/x/simple_youtube_chapter_extractor@1.0.0/youtube-chapter-extractor.ts
+deno install -Af https://deno.land/x/simple_youtube_chapter_extractor@v1.0.0/youtube-chapter-extractor.ts
 ```
 
 ## Uninstall
