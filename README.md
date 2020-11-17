@@ -99,7 +99,9 @@ flatpak run --command=mkvmerge org.bunkus.mkvtoolnix-gui --chapters originalfile
 
 # Development
 
-Run `deno test` to run tests.
+`deno test` to run tests.
+
+`deno --unstable lint youtube-chapter-extractor.ts` to lint.
 
 ## Suggested contributions
 
