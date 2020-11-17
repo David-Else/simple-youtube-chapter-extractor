@@ -7,6 +7,20 @@ Copy the text containing chapter information directly from YouTube and convert i
 - [Deno](https://deno.land/) installed
 - `mkvmerge` command line tool or `MKVToolNix GUI` installed
 
+# Installation
+
+## Install or update:
+
+```
+deno install -Af https://raw.githubusercontent.com/David-Else/simple-youtube-chapter-extractor/main/youtube-chapter-extractor.ts
+```
+
+## Uninstall
+
+https://github.com/denoland/deno/issues/3139
+
+`rm $(which youtube-chapter-extractor)`
+
 # Usage
 
 - Find a video that uses the recent YouTube chapters feature:
@@ -63,10 +77,10 @@ To see what it does paste it into [regex101.com](https://regex101.com/). Please 
 ## Extract chapters from text file
 
 ```
-deno run --allow-read --allow-write youtube-chapter-extractor.ts [name of text file to process]
+youtube-chapter-extractor [name of text file to process]
 ```
 
-or:
+or if you did not install it and running from source file:
 
 ```
 ./youtube-chapter-extractor.ts [name of text file to process]
