@@ -1,5 +1,8 @@
 #!/usr/bin/env -S deno run --allow-read --allow-write
 
+/**
+ * Creates a simple mkvmerge chapter format file from timing/chapters extracted from text in inputFile
+ */
 export class ChapterFile {
   public readonly content: string;
   public readonly fileName: string;
