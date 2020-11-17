@@ -4,7 +4,7 @@ Copy the text containing chapter information directly from YouTube and convert i
 
 # Requirements
 
-- [Deno](https://deno.land/) installed
+- [Deno](https://deno.land/) installed (tested on 1.5.3)
 - `mkvmerge` command line tool or `MKVToolNix GUI` installed
 
 # Installation
@@ -12,7 +12,7 @@ Copy the text containing chapter information directly from YouTube and convert i
 ## Install or update:
 
 ```
-deno install -Af https://raw.githubusercontent.com/David-Else/simple-youtube-chapter-extractor/main/youtube-chapter-extractor.ts
+deno install -Af https://deno.land/x/simple_youtube_chapter_extractor@1.0.0/youtube-chapter-extractor.ts
 ```
 
 ## Uninstall
