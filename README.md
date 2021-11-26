@@ -147,4 +147,4 @@ https://i.imgur.com/mcmRMny.png
 
 **Q**: Any other solutions?
 
-**A**: Try https://github.com/yt-dlp/yt-dlp/ and `yt-dlp --embed-chapters [URL`
+**A**: Try https://github.com/yt-dlp/yt-dlp/ and `yt-dlp --embed-chapters [URL]`
